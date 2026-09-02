@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animated Portfolio - VIVEKVISUALS</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas Video -->
+    <div class="canvas-container">
+        <canvas id="video-canvas"></canvas>
+    </div>
+
+    <!-- Main Content Overlay -->
+    <div class="main-content">
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="ph-fill ph-hexagon" style="color: var(--brand-color); font-size: 1.5rem;"></i>
+                <span>VIVEKVISUALS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#" class="btn-outline book-call-btn">Book A Call <i class="ph ph-calendar-plus"></i></a>
+        </nav>
+
+        <!-- Spacer -->
+        <div class="scroll-spacer" style="height: 10vh;"></div>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span> CREATIVE DESIGN STUDIO
+                </div>
+                
+                <h1 class="hero-title">
+                    We Create<br>
+                    Visuals That<br>
+                    <span class="highlight">Grow Brands</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Graphic Design &bull; Video Editing &bull; Motion Graphics
+                </p>
+                
+                <p class="hero-desc">
+                    Helping creators, businesses and brands stand out through<br>
+                    strategic design, cinematic editing and engaging motion graphics.
+                </p>
+                
+                <div class="hero-cta-wrapper">
+                    <a href="#" class="btn-primary know-more-btn">Know More About Me <i class="ph ph-arrow-right"></i></a>
+                    <a href="#" class="btn-outline book-call-btn">Book A Call <i class="ph-fill ph-phone-call"></i></a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="ph ph-briefcase"></i>
+                        <div>
+                            <div class="stat-num">150+</div>
+                            <div class="stat-text">Projects Delivered</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-smiley"></i>
+                        <div>
+                            <div class="stat-num">98%</div>
+                            <div class="stat-text">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-eye"></i>
+                        <div>
+                            <div class="stat-num">20M+</div>
+                            <div class="stat-text">Views Generated</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-users"></i>
+                        <div>
+                            <div class="stat-num">50+</div>
+                            <div class="stat-text">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="premium-hero-card parallax-wrapper" data-parallax-speed="0.05" id="heroInteractiveCard" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="hero-card-glow"></div>
+                
+                <img src="file_00000000c6b08206b2d0c3bdea6b64b0.png" class="portrait-image hero-portrait" alt="Vivek Visuals Founder">
+                
+                <div class="hero-card-content">
+                    <div class="hero-brand-name">
+                        <span class="brand-v">VIVEK</span>
+                        <span class="brand-v">VISUALS</span>
+                    </div>
+                    <div class="hero-brand-tagline">
+                        FOUNDER &bull; CREATIVE DIRECTOR
+                    </div>
+                </div>
+                
+                <div class="hero-card-overlay">
+                    <i class="ph ph-arrows-out-simple"></i>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 20vh;"></div>
+
+        <!-- Selected Projects -->
+        <section class="projects-section" id="work">
+            <div class="section-header center reveal">
+                <span class="section-label">FEATURED WORK</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-desc">A collection of our recent creative work.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" id="yt-thumbnails-card">
+                    <div class="project-img-placeholder thumb-1"></div>
+                    <div class="project-info">
+                        <span>YouTube Thumbnails</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="project-card" id="video-editing-card">
+                    <div class="project-img-placeholder thumb-2" style="position: relative; overflow: hidden;">
+                        <video src="song%20taal%20se%20taal%20mila%20animated%20by%20me.mp4#t=5" muted playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; z-index: 1; pointer-events: none;"></video>
+                        <div class="video-play-overlay" style="z-index: 2;">
+                            <i class="ph-fill ph-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span>Video Editing</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-placeholder thumb-3"></div>
+                    <div class="project-info">
+                        <span>Motion Graphics</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-placeholder thumb-4"></div>
+                    <div class="project-info">
+                        <span>Brand Identity</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="project-card" id="sm-design-card">
+                    <div class="project-img-placeholder thumb-5"></div>
+                    <div class="project-info">
+                        <span>Social Media Design</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-placeholder thumb-6"></div>
+                    <div class="project-info">
+                        <span>Advertising Creatives</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 20vh;"></div>
+
+        <!-- What We Do (Services) -->
+        <section class="services-section-glass" id="services">
+            <div class="section-header center" data-aos="fade-up" data-aos-duration="600">
+                <span class="section-label">- SERVICES</span>
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-desc">Creative solutions designed to help brands, creators and businesses stand out through impactful visuals and storytelling.</p>
+            </div>
+            
+            <div class="premium-services-wrapper">
+                <div class="premium-services-bg-glow"></div>
+                <div class="premium-services-grid">
+                    
+                    <!-- Graphic Design -->
+                    <div class="premium-service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                        <div class="premium-service-icon s-icon-rotate"><i class="ph ph-bezier-curve"></i></div>
+                        <h3>Graphic Design</h3>
+                        <ul class="premium-service-list">
+                            <li style="--stagger-delay: 0.1s"><i class="ph-bold ph-check"></i> Branding Design</li>
+                            <li style="--stagger-delay: 0.2s"><i class="ph-bold ph-check"></i> YouTube Thumbnails</li>
+                            <li style="--stagger-delay: 0.3s"><i class="ph-bold ph-check"></i> Social Media Posts</li>
+                            <li style="--stagger-delay: 0.4s"><i class="ph-bold ph-check"></i> Posters & Flyers</li>
+                            <li style="--stagger-delay: 0.5s"><i class="ph-bold ph-check"></i> Marketing Creatives</li>
+                            <li style="--stagger-delay: 0.6s"><i class="ph-bold ph-check"></i> Visual Identity Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div class="premium-service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                        <div class="premium-service-icon s-icon-pulse"><i class="ph ph-video-camera"></i></div>
+                        <h3>Video Editing</h3>
+                        <ul class="premium-service-list">
+                            <li style="--stagger-delay: 0.1s"><i class="ph-bold ph-check"></i> YouTube Videos</li>
+                            <li style="--stagger-delay: 0.2s"><i class="ph-bold ph-check"></i> Short Form Content</li>
+                            <li style="--stagger-delay: 0.3s"><i class="ph-bold ph-check"></i> Reels Editing</li>
+                            <li style="--stagger-delay: 0.4s"><i class="ph-bold ph-check"></i> Promotional Videos</li>
+                            <li style="--stagger-delay: 0.5s"><i class="ph-bold ph-check"></i> Documentary Editing</li>
+                            <li style="--stagger-delay: 0.6s"><i class="ph-bold ph-check"></i> Cinematic Storytelling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Motion Graphics -->
+                    <div class="premium-service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <div class="premium-service-icon s-icon-float"><i class="ph ph-stack"></i></div>
+                        <h3>Motion Graphics</h3>
+                        <ul class="premium-service-list">
+                            <li style="--stagger-delay: 0.1s"><i class="ph-bold ph-check"></i> Logo Animation</li>
+                            <li style="--stagger-delay: 0.2s"><i class="ph-bold ph-check"></i> Motion Design</li>
+                            <li style="--stagger-delay: 0.3s"><i class="ph-bold ph-check"></i> Animated Visuals</li>
+                            <li style="--stagger-delay: 0.4s"><i class="ph-bold ph-check"></i> Explainer Animations</li>
+                            <li style="--stagger-delay: 0.5s"><i class="ph-bold ph-check"></i> Social Media Motion Content</li>
+                            <li style="--stagger-delay: 0.6s"><i class="ph-bold ph-check"></i> Dynamic Transitions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Content Strategy -->
+                    <div class="premium-service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                        <div class="premium-service-icon s-icon-reveal"><i class="ph ph-lightbulb"></i></div>
+                        <h3>Content Strategy</h3>
+                        <ul class="premium-service-list">
+                            <li style="--stagger-delay: 0.1s"><i class="ph-bold ph-check"></i> Content Planning</li>
+                            <li style="--stagger-delay: 0.2s"><i class="ph-bold ph-check"></i> Growth Strategy</li>
+                            <li style="--stagger-delay: 0.3s"><i class="ph-bold ph-check"></i> Audience Research</li>
+                            <li style="--stagger-delay: 0.4s"><i class="ph-bold ph-check"></i> Creative Direction</li>
+                            <li style="--stagger-delay: 0.5s"><i class="ph-bold ph-check"></i> Brand Positioning</li>
+                            <li style="--stagger-delay: 0.6s"><i class="ph-bold ph-check"></i> Content Optimization</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 20vh;"></div>
+
+        <!-- About Me -->
+        <section class="about-section" id="about">
+            <div class="about-left">
+                <div class="about-portrait-placeholder parallax-wrapper" data-parallax-speed="0.08">
+                    <img src="1.png" class="about-portrait-image premium-portrait-frame about-premium-reveal" alt="Vivek">
+                    <span class="cursive-text about-sig">Vivek</span>
+                </div>
+            </div>
+            <div class="about-right">
+                <span class="section-label" data-aos="fade-up" data-aos-delay="200">• ABOUT ME</span>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="300">About Vivek Kumar</h2>
+                <p class="about-text" data-aos="fade-up" data-aos-delay="400">
+                    I'm Vivek Kumar, founder of VIVEKVISUALS. I help creators, startups and brands communicate their ideas through impactful graphic design, professional video editing and motion graphics.
+                </p>
+                <p class="about-text" data-aos="fade-up" data-aos-delay="500">
+                    My goal is simple — create visuals that not only look amazing but also drive real engagement, reach and business growth.
+                </p>
+                
+                <div class="about-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="astat">
+                        <i class="ph ph-medal"></i>
+                        <div>
+                            <span class="astat-num">5+</span><br>
+                            <span class="astat-lbl">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="astat">
+                        <i class="ph ph-briefcase"></i>
+                        <div>
+                            <span class="astat-num">150+</span><br>
+                            <span class="astat-lbl">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div class="astat">
+                        <i class="ph ph-smiley"></i>
+                        <div>
+                            <span class="astat-num">98%</span><br>
+                            <span class="astat-lbl">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="astat">
+                        <i class="ph ph-eye"></i>
+                        <div>
+                            <span class="astat-num">20M+</span><br>
+                            <span class="astat-lbl">Views Generated</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="#" class="btn-primary know-more-btn">Know More About Me <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 20vh;"></div>
+
+        <!-- Process Section -->
+        <section class="process-section" id="process">
+            <div class="section-header center">
+                <span class="section-label">PROCESS</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-desc">Simple steps to turn your ideas into powerful visuals.</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="ph ph-magnifying-glass"></i></div>
+                    <h3>01. Discovery</h3>
+                    <p>We understand your goals,<br>requirements and target<br>audience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="ph ph-lightbulb"></i></div>
+                    <h3>02. Strategy</h3>
+                    <p>We plan the creative strategy<br>and visual direction for<br>maximum impact.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="ph ph-pencil-simple"></i></div>
+                    <h3>03. Create</h3>
+                    <p>Design, edit and produce<br>high-quality visuals that<br>tell your story.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="ph ph-check-circle"></i></div>
+                    <h3>04. Deliver</h3>
+                    <p>We deliver the final files<br>with revisions to ensure<br>complete satisfaction.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 20vh;"></div>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section" id="testimonials">
+            
+            <!-- Trust Stats -->
+            <div class="trust-stats-container" data-aos="fade-up">
+                <div class="trust-stat">
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="trust-stat">
+                    <h3 class="stat-number" data-target="300">0</h3>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="trust-stat">
+                    <h3 class="stat-number" data-target="99">0</h3><h3 class="stat-percent">%</h3>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="trust-stat">
+                    <h3 class="stat-number" data-target="85">0</h3><h3 class="stat-percent">%</h3>
+                    <span class="stat-label">Repeat Clients</span>
+                </div>
+            </div>
+
+            <div class="section-header center" data-aos="fade-up">
+                <span class="section-label">TESTIMONIALS</span>
+                <h2 class="section-title">What Clients Say<span class="title-underline"></span></h2>
+                <p class="section-desc">Real feedback from clients I've had the pleasure of working with.</p>
+            </div>
+            
+            <div class="premium-testimonials-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="premium-testimonials-track" id="testimonialsTrack">
+                    
+                    <!-- Original 3 Testimonials -->
+                    <div class="premium-test-card" data-full-review="Vivek's editing skills are next level! My videos have never looked this professional. Highly recommended. The collaboration was incredibly smooth and the final result exceeded all expectations." data-project="YouTube Video Editing">
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Aman Verma" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Aman Verma</h4>
+                                <span class="client-role">YouTuber</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">Vivek's editing skills are next level! My videos have never looked this professional. Highly recommended...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <div class="premium-test-card" data-full-review="The thumbnails and designs created by VivekVisuals gave our brand a whole new identity. Amazing work! The engagement on our channel skyrocketed after we implemented the new visual direction." data-project="Brand Identity & Thumbnails">
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Neha Sharma" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Neha Sharma</h4>
+                                <span class="client-role">Brand Owner</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">The thumbnails and designs created by VivekVisuals gave our brand a whole new identity. Amazing work!...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <div class="premium-test-card" data-full-review="From motion graphics to video editing, everything is handled with creativity and perfection. Vivek is incredibly professional and always delivers on time, if not early." data-project="Motion Graphics Package">
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?img=8" alt="Rahul Singh" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Rahul Singh</h4>
+                                <span class="client-role">Entrepreneur</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">From motion graphics to video editing, everything is handled with creativity and perfection...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 4: Rahul Sharma -->
+                    <div class="premium-test-card" data-full-review="Working with Vivek was an outstanding experience. His design sense, creativity and attention to detail helped elevate our brand presence significantly. Every deliverable was polished, professional and delivered on time. Highly recommended for anyone looking for quality creative work." data-project="Brand Presence & Design">
+                        <div class="client-info">
+                            <img src="client_rahul.jpg" alt="Rahul Sharma" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Rahul Sharma</h4>
+                                <span class="client-role">Founder, Digital Growth Media</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">Working with Vivek was an outstanding experience. His design sense, creativity and attention to detail helped elevate our brand presence significantly...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 5: Priya Verma -->
+                    <div class="premium-test-card" data-full-review="Vivek consistently delivered exceptional designs that aligned perfectly with our marketing campaigns. Communication was smooth, revisions were handled professionally and the final results exceeded expectations." data-project="Marketing Campaign Designs">
+                        <div class="client-info">
+                            <img src="client_priya.jpg" alt="Priya Verma" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Priya Verma</h4>
+                                <span class="client-role">Marketing Manager, Elevate Brands</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">Vivek consistently delivered exceptional designs that aligned perfectly with our marketing campaigns. Communication was smooth, revisions were handled professionally...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 6: Arjun Mehta -->
+                    <div class="premium-test-card" data-full-review="The thumbnails and video edits created by Vivek noticeably improved engagement across my content. His understanding of visual storytelling is impressive. I look forward to working together on future projects." data-project="Thumbnails & Video Editing">
+                        <div class="client-info">
+                            <img src="client_arjun.jpg" alt="Arjun Mehta" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Arjun Mehta</h4>
+                                <span class="client-role">Content Creator</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">The thumbnails and video edits created by Vivek noticeably improved engagement across my content. His understanding of visual storytelling is impressive...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 7: Sneha Kapoor -->
+                    <div class="premium-test-card" data-full-review="I was impressed by the creativity and professionalism throughout the project. The designs felt modern, premium and perfectly represented my brand. The entire process was seamless from start to finish." data-project="Brand Identity Design">
+                        <div class="client-info">
+                            <img src="client_sneha.jpg" alt="Sneha Kapoor" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Sneha Kapoor</h4>
+                                <span class="client-role">Founder, SK Fashion Studio</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">I was impressed by the creativity and professionalism throughout the project. The designs felt modern, premium and perfectly represented my brand...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 8: Aman Gupta -->
+                    <div class="premium-test-card" data-full-review="Vivek has an excellent eye for design and branding. His work helped us create a stronger visual identity and improve audience engagement. Fast delivery and outstanding quality." data-project="Visual Identity & Branding">
+                        <div class="client-info">
+                            <img src="client_aman.jpg" alt="Aman Gupta" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Aman Gupta</h4>
+                                <span class="client-role">CEO, NextWave Solutions</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">Vivek has an excellent eye for design and branding. His work helped us create a stronger visual identity and improve audience engagement...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 9: Neha Singh -->
+                    <div class="premium-test-card" data-full-review="One of the most reliable creatives I've worked with. Every design was thoughtful, visually appealing and aligned with our objectives. The results were beyond what we initially imagined." data-project="Strategic Visual Design">
+                        <div class="client-info">
+                            <img src="client_neha.jpg" alt="Neha Singh" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Neha Singh</h4>
+                                <span class="client-role">Social Media Strategist</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">One of the most reliable creatives I've worked with. Every design was thoughtful, visually appealing and aligned with our objectives...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Client 10: Rohit Malhotra -->
+                    <div class="premium-test-card" data-full-review="Vivek's thumbnail designs and editing work played a major role in improving the overall presentation of my channel. His creativity, speed and consistency make him a valuable creative partner." data-project="YouTube Channel Presentation">
+                        <div class="client-info">
+                            <img src="client_rohit.jpg" alt="Rohit Malhotra" class="client-avatar">
+                            <div class="client-details">
+                                <h4 class="client-name">Rohit Malhotra</h4>
+                                <span class="client-role">YouTube Creator</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-preview">Vivek's thumbnail designs and editing work played a major role in improving the overall presentation of my channel. His creativity, speed and consistency...</p>
+                        <button class="read-review-btn">Read Full Review <i class="ph ph-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="carousel-indicators">
+                <button class="carousel-btn prev-btn" id="testimonialPrev"><i class="ph ph-caret-left"></i></button>
+                <div class="carousel-dots" id="testimonialDots"></div>
+                <button class="carousel-btn next-btn" id="testimonialNext"><i class="ph ph-caret-right"></i></button>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 10vh;"></div>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-left">
+                <h2>Ready To Elevate<br>Your Brand?</h2>
+            </div>
+            <div class="cta-middle">
+                <p>Let's create visuals that<br>get noticed and drive results.</p>
+            </div>
+            <div class="cta-right">
+                <a href="#" class="btn-dark book-call-btn">Book A Call <i class="ph ph-calendar-plus"></i></a>
+                <a href="#" class="btn-white contact-us-btn">Contact Us <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="ph-fill ph-hexagon" style="color: var(--brand-color); font-size: 1.5rem;"></i>
+                        <span>VIVEKVISUALS</span>
+                    </div>
+                    <p>Graphic Design. Video Editing.<br>Motion Graphics.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vivekvisuals_17?igsi=MXJmb2ZzZHI4ZGJ5cA==" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://youtube.com/@acewithvivek17?si=Vt3rl4TCKXpxp3O_" target="_blank"><i class="ph ph-youtube-logo"></i></a>
+                        <a href="https://wa.me/919334727613" target="_blank"><i class="ph ph-whatsapp-logo"></i></a>
+                        <a href="mailto:vivekvisuals9334@gmail.com"><i class="ph ph-envelope-simple"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Work</a>
+                        <a href="#">Services</a>
+                        <a href="#">About</a>
+                        <a href="#">Process</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#service-graphic">Graphic Design</a>
+                        <a href="#service-video">Video Editing</a>
+                        <a href="#service-motion">Motion Graphics</a>
+                        <a href="#service-content">Content Strategy</a>
+                        <a href="#service-graphic">Branding</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Let's Connect</h4>
+                        <a href="tel:8825235243" class="contact-link"><i class="ph ph-phone-call"></i> +91 8825235243</a>
+                        <a href="tel:9334727613" class="contact-link"><i class="ph ph-phone-call"></i> +91 9334727613</a>
+                        <a href="mailto:vivekvisuals9334@gmail.com" class="contact-link"><i class="ph ph-envelope-simple"></i> vivekvisuals9334@gmail.com</a>
+                        <a href="#" class="contact-link"><i class="ph ph-map-pin"></i> India</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VivekVisuals. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Contact Options Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeContactModal"><i class="ph ph-x"></i></button>
+            <h2 class="modal-title">Get In Touch</h2>
+            <p class="modal-desc">Choose your preferred way to reach out. We typically reply within a few hours.</p>
+            
+            <div class="contact-options">
+                <a href="https://wa.me/919334727613" target="_blank" class="contact-option-btn whatsapp">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Message on WhatsApp
+                </a>
+                <a href="https://www.instagram.com/vivekvisuals_17?igsi=MXJmb2ZzZHI4ZGJ5cA==" target="_blank" class="contact-option-btn insta">
+                    <i class="ph-fill ph-instagram-logo"></i> DM on Instagram
+                </a>
+                <a href="tel:9334727613" class="contact-option-btn phone">
+                    <i class="ph-fill ph-phone-call"></i> Call +91 9334727613
+                </a>
+                <a href="tel:8825235243" class="contact-option-btn phone">
+                    <i class="ph-fill ph-phone-call"></i> Call +91 8825235243
+                </a>
+                <a href="mailto:vivekvisuals9334@gmail.com" class="contact-option-btn email">
+                    <i class="ph-fill ph-envelope-simple"></i> Email vivekvisuals9334@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book A Call Modal -->
+    <div class="modal-overlay" id="bookCallModal">
+        <div class="modal-content book-modal">
+            <button class="modal-close" id="closeBookModal"><i class="ph ph-x"></i></button>
+            <h2 class="modal-title">Book A Discovery Call</h2>
+            <p class="modal-desc">Let's discuss how we can elevate your brand with premium visuals.</p>
+            
+            <div class="book-modal-grid">
+                <!-- Left: Contact Info & Availability -->
+                <div class="book-info-section">
+                    <div class="info-card">
+                        <i class="ph-fill ph-phone-call"></i>
+                        <h3>Direct Contact</h3>
+                        <p>+91 8825235243</p>
+                        <a href="tel:8825235243" class="btn-dark small-btn">Call Now</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="ph-fill ph-whatsapp-logo" style="color: #25D366;"></i>
+                        <h3>WhatsApp</h3>
+                        <p>+91 9334727613</p>
+                        <a href="https://wa.me/919334727613" target="_blank" class="btn-dark small-btn">Message</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="ph-fill ph-envelope-simple"></i>
+                        <h3>Email</h3>
+                        <p>vivekvisuals9334@gmail.com</p>
+                    </div>
+
+                    <div class="availability-card">
+                        <h4><i class="ph ph-clock"></i> Working Hours</h4>
+                        <p>Monday – Saturday</p>
+                        <p class="highlight-time">10:00 AM – 8:00 PM (IST)</p>
+                    </div>
+                </div>
+
+                <!-- Right: Schedule Form -->
+                <div class="book-form-section">
+                    <form action="https://formsubmit.co/vivekvisuals9334@gmail.com" method="POST" id="bookingForm" class="project-form book-form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Call Booking Request!">
+                        <input type="hidden" name="_next" value="https://vivekvisuals.com">
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Full Name *</label>
+                                <input type="text" name="Name" required placeholder="John Doe">
+                            </div>
+                            <div class="input-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="Email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" name="Phone" required placeholder="+91 9876543210">
+                            </div>
+                            <div class="input-group">
+                                <label>Company/Brand Name</label>
+                                <input type="text" name="Company" placeholder="Optional">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Service Interested In *</label>
+                                <select name="Service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                    <option value="Video Editing">Video Editing</option>
+                                    <option value="Motion Graphics">Motion Graphics</option>
+                                    <option value="Thumbnail Design">Thumbnail Design</option>
+                                    <option value="Social Media Content">Social Media Content</option>
+                                    <option value="Custom Project">Custom Project</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Project Budget *</label>
+                                <select name="Budget" required>
+                                    <option value="" disabled selected>Select budget</option>
+                                    <option value="Under ₹5,000">Under ₹5,000</option>
+                                    <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000</option>
+                                    <option value="₹15,000 - ₹50,000">₹15,000 - ₹50,000</option>
+                                    <option value="₹50,000+">₹50,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Preferred Date *</label>
+                                <input type="date" name="Date" id="bookDate" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Preferred Time (10AM - 8PM) *</label>
+                                <input type="time" name="Time" id="bookTime" min="10:00" max="20:00" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Project Details / Message</label>
+                            <textarea name="Message" rows="3" placeholder="Tell me about your vision..."></textarea>
+                        </div>
+                        
+                        <div class="book-actions">
+                            <button type="submit" class="btn-dark send-btn submit-btn">Submit Booking</button>
+                            <button type="button" class="btn-white send-btn whatsapp-btn" id="bookViaWhatsappBtn"><i class="ph-fill ph-whatsapp-logo"></i> Book via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Know More About Me Modal (Cinematic Experience) -->
+    <div class="fullscreen-modal" id="knowMoreModal">
+        <button class="modal-close-fs" id="closeKnowMoreModal"><i class="ph ph-x"></i></button>
+        <div class="fs-modal-content">
+            
+            <!-- HEADER SECTION -->
+            <section class="fs-section fs-header">
+                <h1 class="fs-title cinematic-reveal">Meet Vivek Kumar</h1>
+                <p class="fs-subtitle cinematic-reveal" style="animation-delay: 0.2s;">
+                    Creative Professional &bull; Graphic Designer &bull; Motion Designer &bull; Video Editor &bull; Documentary Editor &bull; 2D Artist
+                </p>
+                <div class="scroll-indicator cinematic-reveal" style="animation-delay: 0.5s;">
+                    <span>Scroll to explore</span>
+                    <i class="ph ph-arrow-down"></i>
+                </div>
+            </section>
+
+            <!-- INTRODUCTION SECTION -->
+            <section class="fs-section fs-intro">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">Who Am I?</h2>
+                    <div class="fs-text-block scroll-reveal">
+                        <p>Hello, I'm Vivek Kumar.</p>
+                        <p>I am a passionate creative professional specializing in Graphic Design, Motion Design, Video Editing, Documentary Editing and 2D Art.</p>
+                        <p>Over the years, I have worked with creators, brands and businesses, helping them build stronger visual identities, create engaging content and connect with their audiences through impactful storytelling and design.</p>
+                        <p class="fs-highlight">My goal is simple:<br>To transform ideas into visuals that inspire, engage and leave a lasting impression.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section class="fs-section fs-experience">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">Experience & Journey</h2>
+                    <div class="fs-journey-grid">
+                        <div class="journey-card slide-left scroll-reveal">
+                            <p>My creative journey has been built through continuous learning, experimentation and real-world client work.</p>
+                        </div>
+                        <div class="journey-card slide-right scroll-reveal">
+                            <p>I have successfully collaborated with numerous clients across different industries and content niches.</p>
+                        </div>
+                        <div class="journey-card slide-left scroll-reveal">
+                            <p>Through every project, I focus on quality, communication, creativity and delivering results that exceed expectations.</p>
+                        </div>
+                        <div class="journey-card slide-right scroll-reveal">
+                            <p>Whether it's designing powerful visuals, creating motion graphics, editing cinematic videos or crafting compelling documentaries, I approach every project with dedication and attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section class="fs-section fs-services">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">What I Do</h2>
+                    <div class="fs-services-grid">
+                        <div class="fs-service-card hover-glow scroll-reveal">
+                            <i class="ph ph-bezier-curve"></i>
+                            <h3>Graphic Design</h3>
+                            <p>Professional branding, social media creatives, thumbnails, posters and marketing assets.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.1s;">
+                            <i class="ph ph-video-camera"></i>
+                            <h3>Motion Design</h3>
+                            <p>Dynamic animations and engaging motion graphics.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.2s;">
+                            <i class="ph ph-film-strip"></i>
+                            <h3>Video Editing</h3>
+                            <p>High-quality edits for creators, brands and businesses.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.3s;">
+                            <i class="ph ph-camera"></i>
+                            <h3>Documentary Editing</h3>
+                            <p>Story-driven editing with strong narrative structure.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.4s;">
+                            <i class="ph ph-pencil-line"></i>
+                            <h3>2D Art</h3>
+                            <p>Creative illustrations and artistic visual concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK ETHICS SECTION -->
+            <section class="fs-section fs-ethics">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">What Clients Appreciate</h2>
+                    <div class="fs-stats-grid">
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Professional Communication</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Attention To Detail</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Creative Problem Solving</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">On-Time Delivery</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Long-Term Collaboration</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VISION SECTION -->
+            <section class="fs-section fs-vision">
+                <div class="fs-container center">
+                    <h2 class="fs-heading scroll-reveal">My Vision</h2>
+                    <div class="fs-text-block scroll-reveal">
+                        <p>I believe great design is more than visuals.</p>
+                        <p>Every project is an opportunity to communicate ideas, build trust and create meaningful experiences.</p>
+                        <p class="fs-highlight">My mission is to help brands, creators and businesses stand out through thoughtful design, compelling storytelling and professional execution.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT CTA SECTION -->
+            <section class="fs-section fs-cta">
+                <div class="fs-container center">
+                    <h2 class="fs-heading scroll-reveal">Let's Create Something Amazing Together</h2>
+                    <p class="fs-cta-desc scroll-reveal">If you're looking for a dedicated creative professional who values quality, creativity and results, I'd love to hear about your project.</p>
+                    <div class="fs-actions scroll-reveal">
+                        <button class="btn-primary book-call-btn" id="fsBookCallBtn">Book A Call</button>
+                        <a href="mailto:vivekvisuals9334@gmail.com" class="btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal (For regular projects) -->
+    <div class="modal-overlay" id="imageLightboxModal">
+        <button class="modal-close-fs" id="closeLightboxModal"><i class="ph ph-x"></i></button>
+        <div class="lightbox-content">
+            <img src="" id="lightboxImage" alt="Project Image" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- 1. FULLSCREEN THUMBNAIL GALLERY MODAL -->
+    <div class="fullscreen-modal" id="thumbnailGalleryModal">
+        <button class="modal-close-fs" id="closeGalleryModal"><i class="ph ph-x"></i></button>
+        <div class="fs-modal-content" style="max-width: 1400px; padding-top: 100px;">
+            <div class="gallery-header cinematic-reveal">
+                <span class="section-label">PORTFOLIO</span>
+                <h2 class="fs-heading" id="galleryDynamicTitle">Gallery</h2>
+                <p id="galleryDynamicDesc">A collection of premium designs.</p>
+            </div>
+            
+            <div class="thumbnail-gallery-grid" id="galleryGrid">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. GALLERY VIEWER LIGHTBOX (For Gallery Items) -->
+    <div class="modal-overlay" id="galleryViewerModal" style="z-index: 10005;">
+        <div class="viewer-top-bar">
+            <div class="viewer-counter"><span id="viewerCurrent">1</span> / <span id="viewerTotal">5</span></div>
+            <button class="modal-close-fs" id="closeViewerModal" style="position: relative; top: 0; right: 0;"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <button class="viewer-nav-btn prev" id="viewerPrevBtn"><i class="ph ph-caret-left"></i></button>
+        <button class="viewer-nav-btn next" id="viewerNextBtn"><i class="ph ph-caret-right"></i></button>
+        
+                        <div class="input-group">
+                            <label>Project Details / Message</label>
+                            <textarea name="Message" rows="3" placeholder="Tell me about your vision..."></textarea>
+                        </div>
+                        
+                        <div class="book-actions">
+                            <button type="submit" class="btn-dark send-btn submit-btn">Submit Booking</button>
+                            <button type="button" class="btn-white send-btn whatsapp-btn" id="bookViaWhatsappBtn"><i class="ph-fill ph-whatsapp-logo"></i> Book via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Know More About Me Modal (Cinematic Experience) -->
+    <div class="fullscreen-modal" id="knowMoreModal">
+        <button class="modal-close-fs" id="closeKnowMoreModal"><i class="ph ph-x"></i></button>
+        <div class="fs-modal-content">
+            
+            <!-- HEADER SECTION -->
+            <section class="fs-section fs-header">
+                <h1 class="fs-title cinematic-reveal">Meet Vivek Kumar</h1>
+                <p class="fs-subtitle cinematic-reveal" style="animation-delay: 0.2s;">
+                    Creative Professional &bull; Graphic Designer &bull; Motion Designer &bull; Video Editor &bull; Documentary Editor &bull; 2D Artist
+                </p>
+                <div class="scroll-indicator cinematic-reveal" style="animation-delay: 0.5s;">
+                    <span>Scroll to explore</span>
+                    <i class="ph ph-arrow-down"></i>
+                </div>
+            </section>
+
+            <!-- INTRODUCTION SECTION -->
+            <section class="fs-section fs-intro">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">Who Am I?</h2>
+                    <div class="fs-text-block scroll-reveal">
+                        <p>Hello, I'm Vivek Kumar.</p>
+                        <p>I am a passionate creative professional specializing in Graphic Design, Motion Design, Video Editing, Documentary Editing and 2D Art.</p>
+                        <p>Over the years, I have worked with creators, brands and businesses, helping them build stronger visual identities, create engaging content and connect with their audiences through impactful storytelling and design.</p>
+                        <p class="fs-highlight">My goal is simple:<br>To transform ideas into visuals that inspire, engage and leave a lasting impression.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section class="fs-section fs-experience">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">Experience & Journey</h2>
+                    <div class="fs-journey-grid">
+                        <div class="journey-card slide-left scroll-reveal">
+                            <p>My creative journey has been built through continuous learning, experimentation and real-world client work.</p>
+                        </div>
+                        <div class="journey-card slide-right scroll-reveal">
+                            <p>I have successfully collaborated with numerous clients across different industries and content niches.</p>
+                        </div>
+                        <div class="journey-card slide-left scroll-reveal">
+                            <p>Through every project, I focus on quality, communication, creativity and delivering results that exceed expectations.</p>
+                        </div>
+                        <div class="journey-card slide-right scroll-reveal">
+                            <p>Whether it's designing powerful visuals, creating motion graphics, editing cinematic videos or crafting compelling documentaries, I approach every project with dedication and attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section class="fs-section fs-services">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">What I Do</h2>
+                    <div class="fs-services-grid">
+                        <div class="fs-service-card hover-glow scroll-reveal">
+                            <i class="ph ph-bezier-curve"></i>
+                            <h3>Graphic Design</h3>
+                            <p>Professional branding, social media creatives, thumbnails, posters and marketing assets.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.1s;">
+                            <i class="ph ph-video-camera"></i>
+                            <h3>Motion Design</h3>
+                            <p>Dynamic animations and engaging motion graphics.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.2s;">
+                            <i class="ph ph-film-strip"></i>
+                            <h3>Video Editing</h3>
+                            <p>High-quality edits for creators, brands and businesses.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.3s;">
+                            <i class="ph ph-camera"></i>
+                            <h3>Documentary Editing</h3>
+                            <p>Story-driven editing with strong narrative structure.</p>
+                        </div>
+                        <div class="fs-service-card hover-glow scroll-reveal" style="transition-delay: 0.4s;">
+                            <i class="ph ph-pencil-line"></i>
+                            <h3>2D Art</h3>
+                            <p>Creative illustrations and artistic visual concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK ETHICS SECTION -->
+            <section class="fs-section fs-ethics">
+                <div class="fs-container">
+                    <h2 class="fs-heading scroll-reveal">What Clients Appreciate</h2>
+                    <div class="fs-stats-grid">
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Professional Communication</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Attention To Detail</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Creative Problem Solving</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">On-Time Delivery</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="fs-stat scroll-reveal">
+                            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+                            <div class="stat-label">Long-Term Collaboration</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VISION SECTION -->
+            <section class="fs-section fs-vision">
+                <div class="fs-container center">
+                    <h2 class="fs-heading scroll-reveal">My Vision</h2>
+                    <div class="fs-text-block scroll-reveal">
+                        <p>I believe great design is more than visuals.</p>
+                        <p>Every project is an opportunity to communicate ideas, build trust and create meaningful experiences.</p>
+                        <p class="fs-highlight">My mission is to help brands, creators and businesses stand out through thoughtful design, compelling storytelling and professional execution.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT CTA SECTION -->
+            <section class="fs-section fs-cta">
+                <div class="fs-container center">
+                    <h2 class="fs-heading scroll-reveal">Let's Create Something Amazing Together</h2>
+                    <p class="fs-cta-desc scroll-reveal">If you're looking for a dedicated creative professional who values quality, creativity and results, I'd love to hear about your project.</p>
+                    <div class="fs-actions scroll-reveal">
+                        <button class="btn-primary book-call-btn" id="fsBookCallBtn">Book A Call</button>
+                        <a href="mailto:vivekvisuals9334@gmail.com" class="btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal (For regular projects) -->
+    <div class="modal-overlay" id="imageLightboxModal">
+        <button class="modal-close-fs" id="closeLightboxModal"><i class="ph ph-x"></i></button>
+        <div class="lightbox-content">
+            <img src="" id="lightboxImage" alt="Project Image" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- 1. FULLSCREEN THUMBNAIL GALLERY MODAL -->
+    <div class="fullscreen-modal" id="thumbnailGalleryModal">
+        <button class="modal-close-fs" id="closeGalleryModal"><i class="ph ph-x"></i></button>
+        <div class="fs-modal-content" style="max-width: 1400px; padding-top: 100px;">
+            <div class="gallery-header cinematic-reveal">
+                <span class="section-label">PORTFOLIO</span>
+                <h2 class="fs-heading" id="galleryDynamicTitle">Gallery</h2>
+                <p id="galleryDynamicDesc">A collection of premium designs.</p>
+            </div>
+            
+            <div class="thumbnail-gallery-grid" id="galleryGrid">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. GALLERY VIEWER LIGHTBOX (For Gallery Items) -->
+    <div class="modal-overlay" id="galleryViewerModal" style="z-index: 10005;">
+        <div class="viewer-top-bar">
+            <div class="viewer-counter"><span id="viewerCurrent">1</span> / <span id="viewerTotal">5</span></div>
+            <button class="modal-close-fs" id="closeViewerModal" style="position: relative; top: 0; right: 0;"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <button class="viewer-nav-btn prev" id="viewerPrevBtn"><i class="ph ph-caret-left"></i></button>
+        <button class="viewer-nav-btn next" id="viewerNextBtn"><i class="ph ph-caret-right"></i></button>
+        
+        <div class="viewer-content">
+            <div class="viewer-img-wrapper">
+                <img src="" id="viewerImage" alt="Thumbnail View">
+                <!-- Hidden img for preloading -->
+                <img src="" id="preloadImage" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Standalone Video Modal -->
+    <div class="fullscreen-modal" id="videoStandaloneModal">
+        <div class="modal-overlay"></div>
+        <button class="close-modal-btn" id="closeVideoModal"><i class="ph ph-x"></i></button>
+        
+        <div class="viewer-content">
+            <div class="viewer-img-wrapper" style="background: transparent; display:flex; justify-content:center; align-items:center; box-shadow: none;">
+                <video id="standaloneVideoPlayer" src="song%20taal%20se%20taal%20mila%20animated%20by%20me.mp4" controls style="max-width:100%; max-height:85vh; border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,0.8); outline:none; background: #000;"></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Showcase Modal -->
+    <div class="fullscreen-modal" id="heroShowcaseModal">
+        <div class="modal-overlay"></div>
+        <button class="close-modal-btn" id="closeHeroShowcaseModal"><i class="ph ph-x"></i></button>
+        
+        <div class="hero-showcase-content">
+            <div class="hero-showcase-img-wrapper">
+                <img src="file_00000000c6b08206b2d0c3bdea6b64b0.png" alt="Vivek Visuals" id="heroShowcaseImg">
+            </div>
+            <div class="hero-showcase-text">
+                <h2 class="showcase-title">VIVEK VISUALS</h2>
+                <p class="showcase-tagline">Founder & Creative Director</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Review Showcase Modal -->
+    <div class="fullscreen-modal" id="reviewShowcaseModal">
+        <div class="modal-overlay"></div>
+        <div class="review-showcase-container">
+            <button class="modal-close-fs" id="closeReviewModal"><i class="ph ph-x"></i></button>
+            
+            <div class="review-case-study">
+                <div class="review-header">
+                    <img src="" alt="Client" id="rsClientAvatar" class="rs-avatar">
+                    <div class="rs-header-text">
+                        <h3 id="rsClientName" class="rs-name">Client Name</h3>
+                        <span id="rsClientRole" class="rs-role">Client Role</span>
+                    </div>
+                </div>
+                
+                <div class="rs-meta">
+                    <div class="rs-meta-item">
+                        <span class="rs-meta-label">Project Type</span>
+                        <span id="rsProject" class="rs-meta-value">Project Name</span>
+                    </div>
+                    <div class="rs-meta-item">
+                        <span class="rs-meta-label">Rating</span>
+                        <div class="rs-stars" id="rsStars">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rs-content-wrapper">
+                    <p class="rs-quote-mark">"</p>
+                    <div id="rsFullReview" class="rs-full-text">
+                        <!-- Injected by JS line by line -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS Animation Library & Panzoom -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
