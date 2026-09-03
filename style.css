@@ -1538,7 +1538,8 @@ a {
     transform: scale(0.95);
     transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
-#galleryViewerModal.active .viewer-img-wrapper {
+#galleryViewerModal.active .viewer-img-wrapper,
+#videoStandaloneModal.active .viewer-img-wrapper {
     opacity: 1;
     transform: scale(1);
 }
